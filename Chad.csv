@@ -1,0 +1,128 @@
+Epic Name,User Story Summary,User Story Description,User Story Status,Subtask Summary
+Appointment ,"As an admin/therapist After click on calender empty space a pop up should show and I should be able to View below options
+-Appointment 
+-Mark as busy
+-out of office
+-Availiability","1.Verify calendar empty space click opens appointment popup with below options and each pop-up option opens the corresponding screen 
+- Appointment  
+- Mark as busy  
+- Out of office  
+- Availability
+2.Verify that clicking outside of the calendar grid does not trigger the pop-up.
+3.Verify that clicking on an already occupied slot (with an existing appointment) does not show the pop-up and instead opens the appointment details.
+4.Verify that closing the pop-up mid-selection does not save or apply any changes to the calendar state.
+5.Verify that clicking on a date from the past month does not show the pop-up",To Do,UI | Integrate API to FE
+Appointment ,"As a admin/Therapist  I should able to fill below details When appoinment pop up open
+-Enter External Calendar title
+-Enter client name(group  couple  family)
+-Date  time  duration
+-Select therapist
+-CPT code  units
+-Session type
+-Location","1.Verify that the appointment pop-up allows entering all required fields.(External calendar title  Client name (group  couple  family)  Date  time  and duration Therapist selection  CPT code and units  Session type  Location)
+2.Verify that client name selection supports different formats (group  couple  family) 
+3.Verify that leaving fields (e.g.  client name  date/time  therapist) empty and clicking “Save” triggers validation errors 
+4.Verify that dropdowns (e.g.  session type  therapist) display all options correctly 
+5.Verify that entering the maximum character limit (e.g.  100 chars) in fields  “External Calendar Title” does not break the layout
+6. Verify that the user is not able to book an appointment for a past date.",To Do,UI | Integrate API to FE
+Appointment ,"As admin/therapist  I should be able to enter cilent name as group  family  couple  individual
+
+","1.Verify that the ""Client Name"" field provides options for all client types(Group  Family  Couple  Individual)
+2.Verify that after selecting a client type and entering valid client information  the data is successfully saved and reflected in the appointment summary.
+3.Verify that submitting the form without selecting a client type shows an appropriate validation error
+4.Verify that entering invalid characters (e.g.  symbols or numbers in names) in the client name fields shows a proper error message
+5.Verify that trying to add more clients than (e.g.  adding 10 people in a ""Couple"" session) give  a validation error.
+6.Verify that switching between client types (group  family  couple  individual) updates the form dynamically without page reload 
+
+
+",To Do,UI | Integrate API to FE
+Appointment ,"As a admin/therapist  I should be able to view below details when I select client name
+-Name
+-Insurance
+-Contact Number
+-email
+-Authorization end date","1.Verify that when a client name is selected  the following details are displayed correctly(Name  Insurance  Contact Number  Email Authorization End Date)
+2.Verify that selecting a different client updates the displayed information accordingly.
+3.Verify that if a client record is missing any of the required fields  the system  shows “Not Available” instead of crashing or showing blank
+4.Verify that the authorization end date displays correctly
+5.Verify that fields like contact number and email allowed maximum characters (e.g.  long email IDs or international phone numbers) without UI breakage.
+",To Do,UI | Integrate API to FE
+Appointment ,As a therapist or admin  I should be able to use a banner scrolling feature for group insurance details,"1.Verify that when a group client is selected  the system displays the following details:
+-Group Name
+-Group Insurance
+-Contact Number
+-Email Address
+-Authorization End Date
+2.Verify that all the group details are fetched correctly from the database
+3.Verify that email and contact number formats are displayed correctly
+4.Verify that long group names or email addresses (e.g.  50+ characters) are displayed properly",To Do,UI | Integrate API to FE
+calendar,As an admin or therapist  I want to manually select individual or multiple therapist when scheduling an appointment  instead of having all therapists selected by default.,"1.Verify that the system allows the user to manually select one or more therapists from the list while booking an appointment.
+2.Verify that by default  no therapist is pre-selected 
+
+",To Do,UI | Integrate API to FE
+calendar,As an admin or therapist  I should be able to schedule appointments directly from the calendar view.,"1.Verify that clicking on an empty time slot in the calendar view opens the appointment scheduling pop-up 
+2.Verify that once the appointment is booked  it appears on the calendar.
+
+",To Do,UI | Integrate API to FE
+calendar,As an admin or therapist  I want the calendar to open to the current day  week and month so I can View the latest schedule right away.,"1.Verify that when the calendar is opened  it automatically defaults to the current day in day view.
+2.Verify that the current week displayed first when the week view is selected.
+3.Verify that the  current month displayed when month view is selected
+4.Verify that if the system date is changed on the device  the calendar reflects the updated current date correctly",To Do,UI | Integrate API to FE
+calendar,As a admin or therapist I should be able to switch between monthly  weekly  and daily calendar views,"1.Verify that the user can switch between Day  Week  and Month views
+2.Verify that each view displays the correct format:
+-Day view shows appointments for the selected day.
+-Week view displays all days of the current week.
+-Month view shows a grid of all days in the current month.
+3.Verify that when switching views  the selected date context is maintained",To Do,UI | Integrate API to FE
+calendar,As a Therapist  I should able to View client’s name above the date and time in the calendar,"1.Verify that the client’s name is displayed above the appointment’s date and time in the calendar view.
+2.Verify that the correct client name is shown for each appointment slot.
+3.Verify that client names appear consistently across Day  Week  and Month views
+4.Verify that if a client name is missing or unavailable  the system shows a default placeholder 
+5.Verify that clicking on the client name or appointment opens the full appointment details 
+6.Verify that for a group appointment  the calendar displays the group name above the appointment time.
+7.Verify that clicking on the group appointment opens a detailed view showing the list of all clients in the group 
+8.Verify that if a group member has another individual appointment on the same day but at a different time  all appointments appear correctly in their respective time slots.",To Do,UI | Integrate API to FE
+Dashboard,"As a admin  I should be able to View below modules on dashboard
+-Home
+-Client
+-Calender
+-Tasks
+-Billing
+-Reports
+-Settings","1.Verify that all listed modules (Home  Client  Calendar  Tasks  Billing  Reports  Settings) are visible on the admin dashboard after login.
+2.Verify that clicking on each module navigates the admin to the correct corresponding page.
+3.Verify that if one module fails to load (e.g.  Reports)  the rest of the dashboard still loads properly.
+
+",To Do,UI | Integrate API to FE
+Dashboard,"As a therapist  I should be able to View below modules on dashboard
+-Home
+-clients
+-Calender
+-Tasks","1.Verify that after login  the therapist can see the Home  Clients  Calendar  and Tasks modules on the dashboard.
+2.Verify that each module is clickable and navigates the to the correct section.
+3.Verify that the therapist does not see restricted modules such as Billing  Reports  or Settings.",To Do,UI | Integrate API to FE
+Dashboard,"As an admin I should be able to View the count of following:
+- No. Of Client
+- No. Of Therapist
+- No Of Appointments
+- No Of Generated claims
+-Account Receivables","1.Verify that the admin dashboard displays the count of Clients  Therapists  Appointments  Generated Claims  and Account Receivables.
+2.Verify that the displayed counts are accurate and match the actual data in the system.
+3.Verify that each count updates automatically when new data is added or modified 
+4.Verify that clicking on a count (if enabled) navigates the admin to a detailed view
+",To Do,UI | Integrate API to FE
+Dashboard,"As an admin/staff/therapist I should be able to View following sections on the dashboard:
+- Intake wizard
+- Upcoming appointments
+- Tasks
+- Uncharted appointments and Unsigned/incomplete charts","1.Verify that all listed sections (Intake Wizard  Upcoming Appointments  Tasks  Uncharted Appointments and Incomplete Charts) are visible on the dashboard for admins  staff  and therapists.
+2.Verify that clicking on each section leads to the appropriate page 
+3.Verify that if there is no data available for a section the section still appears with a message like ""No data available"" instead of being blank 
+4.Verify that users see an error message if there is a problem loading data in any of the sections.
+
+",To Do,UI | Integrate API to FE
+Dashboard,"As an admin/therapist/staff I should be able to access different filters like:
+- Consultation
+- Initial Visit
+- Onboarded","1.Verify that the Consultation  Initial Visit  and Onboarded filters are available in the Intake Wizard section for admins  therapists  and staff.
+2.Verify that applying each filter displays only the relevant records",To Do,UI | Integrate API to FE

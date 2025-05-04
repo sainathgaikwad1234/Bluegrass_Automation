@@ -1,0 +1,8 @@
+[
+  {
+    "element": "Dashboard",
+    "issue": "Dashboard fails to load after successful login",
+    "severity": "Critical",
+    "screenshot": "reports\\screenshots\\dashboard-login-failure.png"
+  }
+]

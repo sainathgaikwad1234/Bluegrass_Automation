@@ -1,0 +1,36 @@
+{
+  "name": "playwright_mcp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "ts-node ./scripts/setup-project.ts",
+    "test": "playwright test",
+    "test:ui-issues": "playwright test bluegrass-ui-issues.spec.ts settings-ui-issues.spec.ts",
+    "test:with-report": "playwright test --reporter=html,json",
+    "create-tickets": "ts-node ./scripts/run-ui-tests-create-tickets.ts",
+    "create-jira-tickets": "node ./scripts/create-jira-tickets.js",
+    "create-jira-tickets-direct": "node ./scripts/create-jira-tickets-direct.js",
+    "generate-jira-commands": "node ./scripts/direct-jira-ticket.js",
+    "find-issues": "playwright test bluegrass-ui-issues.spec.ts settings-ui-issues.spec.ts --reporter=list",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "This repository contains templates and guidelines for testing the UI of the BlueGrass BSC Admin Portal, specifically focusing on the Dashboard and Settings modules.",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0",
+    "playwright-core": "^1.52.0",
+    "undici-types": "^6.21.0"
+  }
+}

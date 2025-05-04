@@ -1,0 +1,55 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Build artifacts
+/dist/
+/build/
+
+# Coverage reports
+/coverage/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+mcp.json
+*.cursor/mcp.json
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Screenshots (except for specific UI issues)
+/reports/screenshots/*
+!/reports/screenshots/README.md
+!/reports/screenshots/dashboard-login-failure.png
+
+# Git credential files
+.git-credentials
+
+# Embedded git repositories
+cursor_learning/
+sai/

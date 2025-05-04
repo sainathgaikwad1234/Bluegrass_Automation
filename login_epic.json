@@ -1,0 +1,12 @@
+{
+  "fields": {
+    "project": {
+      "key": "SCRUM"
+    },
+    "summary": "Login",
+    "description": "Epic for Login functionality",
+    "issuetype": {
+      "id": "10004"
+    }
+  }
+}

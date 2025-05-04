@@ -1,0 +1,9 @@
+[
+  {
+    "issue": "Dashboard fails to load after successful login",
+    "severity": "Critical",
+    "ticket": "BA-235",
+    "element": "Dashboard",
+    "screenshot": "reports\\screenshots\\dashboard-login-failure.png"
+  }
+]
